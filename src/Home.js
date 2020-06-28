@@ -1,11 +1,21 @@
 import React from 'react';
+import { FaAlignRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import './App.css';
+
 import bookclub from './bookclub.jpg'
  
 const home = () => {
     return (
-       
+         
       <div className="App">
+          <div className="navBar">
+                    <ul className="nav-links">
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="Browse">Browse Clubs</Link></li>
+                        <li href="#">Join</li>
+                    </ul>
+         </div>
 
       <body>
         <div className="App-header">
