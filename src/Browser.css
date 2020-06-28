@@ -1,0 +1,10 @@
+.Browser {
+    text-align: center;
+  }
+
+.Browse-header {
+    background-color: #222;
+    height: 120px;
+    padding: 20px;
+    color: white;
+}
