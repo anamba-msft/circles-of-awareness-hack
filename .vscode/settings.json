@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/74dace4f-79c6-4d56-a806-3b4c6b636a5c/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/circlesofawarenesshack",
+    "appService.deploySubpath": "."
+}
