@@ -1,5 +1,6 @@
 import React from 'react';
 import './Browser.css';
+import { Link } from 'react-router-dom';
 
 const list = [
     {
@@ -11,12 +12,18 @@ const list = [
       endDate: '7/20/2020'
     },
     {
-
         name: 'Native American Traditions and History',
         topic: 'Indigenous Culture in North America',
         leader: 'Jane Doe',
         start: '4/30/2020',
         endDate: '5/29/2020'
+    },
+    {
+        name: 'Books by Queer Authors',
+        topic: 'LGBTQ+',
+        leader: 'Jane Doe',
+        start: '7/30/2020',
+        endDate: '9/29/2020'
     }
   ];
  
@@ -35,7 +42,7 @@ const browser = () => {
              {nestedList.map(item => (
                <li key={item.name}>
                  <div>{item.name}</div>
-                 <div>Topic: {item.topic}</div>
+                 <div><li><Link to="/Club">Topic: {item.topic}</Link></li></div>
                  <div>Leader: {item.leader}</div>
                  <div>Start Date: {item.startDate}</div>
                  <div>End Date: {item.endDate}</div>

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Route, Switch } from 'react-router-dom'
-import logo from './logo.svg';
+
 import './App.css';
 
 import Browse from './Browser';
 
 import home from './Home';
+import club from './Club';
 
 class App extends Component {
   constructor() {
@@ -28,6 +29,7 @@ class App extends Component {
           <Switch>
            <Route path="/" component={home} exact/>
            <Route path="/Browse" component={Browse}/>
+           <Route path="/Club" component={club}/>
           <Route component={Error}/>
          </Switch>
       </div> 
