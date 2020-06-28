@@ -1,10 +1,11 @@
 .Browser {
     text-align: center;
+    background-color: goldenrod;
   }
 
 .Browse-header {
-    background-color: #222;
+
     height: 120px;
     padding: 20px;
-    color: white;
+    color: goldenrod;
 }

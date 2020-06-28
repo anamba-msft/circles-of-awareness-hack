@@ -1,5 +1,6 @@
 import React from 'react';
 import './Browser.css';
+import './App.css'
 import { Link } from 'react-router-dom';
 
 const list = [
@@ -33,6 +34,13 @@ const browser = () => {
     return (
 
        <div>
+          <div className="navBar">
+                    <ul className="nav-links">
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="Browse">Browse Clubs</Link></li>
+                        <li href="#">Join</li>
+                    </ul>
+         </div>
            <div>
                <h1>Browse Bookclubs</h1>
            </div>
