@@ -3,6 +3,7 @@ import './Browser.css';
 import './App.css'
 import { Link } from 'react-router-dom';
 
+
 const list = [
     {
 
@@ -25,7 +26,29 @@ const list = [
         leader: 'Jane Doe',
         start: '7/30/2020',
         endDate: '9/29/2020'
-    }
+    },
+    {
+      name: 'Non-Western Philosophers',
+      topic: 'Philosophy outside Western thought',
+      leader: 'Jane Doe',
+      start: '7/30/2020',
+      endDate: '10/29/2020'
+  },
+  {
+    name: 'Feminist Texts',
+    topic: 'Feminism',
+    leader: 'Jane Doe',
+    start: '8/30/2020',
+    endDate: '9/30/2020'
+  },
+  {
+    name: 'Black Protagonists in Fiction',
+    topic: 'Blacks in Literature',
+    leader: 'Jane Doe',
+    start: '8/30/2020',
+    endDate: '9/30/2020'
+  }
+  
   ];
  
 const nestedLists = [list];
@@ -41,6 +64,7 @@ const browser = () => {
                         <li href="#">Join</li>
                     </ul>
          </div>
+        <div className = "App-header">
            <div>
                <h1>Browse Bookclubs</h1>
            </div>
@@ -49,16 +73,18 @@ const browser = () => {
            <ul key={index}>
              {nestedList.map(item => (
                <li key={item.name}>
-                 <div>{item.name}</div>
-                 <div><li><Link to="/Club">Topic: {item.topic}</Link></li></div>
+                 <div className = "Title"><Link to="/Club">{item.name}</Link></div>
+                 <div>Topic: {item.topic}</div>
                  <div>Leader: {item.leader}</div>
                  <div>Start Date: {item.startDate}</div>
                  <div>End Date: {item.endDate}</div>
+                 <br></br>
                </li>
              ))}
            </ul>
          ))}
        </ul>
+       </div>
        </div>
     );
 }

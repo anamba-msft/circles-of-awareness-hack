@@ -9,3 +9,12 @@
     padding: 20px;
     color: goldenrod;
 }
+
+.Title {
+  font-size: larger;
+  color: black;
+}
+
+.h1 {
+  font-size: small;
+}

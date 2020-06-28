@@ -13,14 +13,14 @@ const club = () => {
                     </ul>
          </div>
   <div className = "App-header">      
- <h1>Welcome to our book club!</h1>
- <p>Our book club is focused on learning about the prison industrial complex. We are currently open for people to join!</p>
- <p><b>Club Leader:</b> Jane Doe</p>
- <p>Timeline: July 1st - August 1st
- </p>
- <p>Currently discussing: The New Jim Crow by Michelle Alexander</p>
- <p>Past discussions: Ted Talk: The Human Stories behind Mass Incarceration by Eve Abrams</p>
- <p>Future discussions: Prison State : The Challenge of Mass Incarceration by Bert Useem and Anne Morrison Peihl, Movie: Just Mercy</p>
+    <h1>Welcome to Lifting Black Voices and Authors!</h1>
+     <h2>Our book club is focused on reading books written by Black authors. We are currently open for people to join!</h2>
+    <p> <b>Club Leader:</b> Jane Doe</p>
+     <p>Timeline: July 1st - August 1st</p>
+ 
+ <p>Currently discussing: The Hate U Give by Angie Thomas</p>
+ <p>Past discussions: An American Marriage by Tayari Jones </p>
+ <p>Future discussions: Between the World and Me by Ta-Nehisi Coates</p>
  <button type="button">Request to Join!</button>
  </div> 
  </div>
